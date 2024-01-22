@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sdgfrfju</title>
+</head>
+<body>
+    <div class="container" align='center'>
+        {% if submitted %}
+        <h1> hello {{name}}, tahsadbadhbahdb</h1>
+        {% else %}
+        <h1> student </h1>
+        <form method="POST">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" name="" value="SubmitFeedback">
+        </form>
+        {% endif %}
+    </div>  
+</body>
+</html>
